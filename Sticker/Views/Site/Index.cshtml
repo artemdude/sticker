@@ -1,0 +1,54 @@
+﻿@{
+    ViewBag.Title = "Index";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+@*Sticker Template*@
+<script type="text/template" id="stickerTemplate"> 
+      <div style="position:absolute; top: {{Position.Left}}px; left: {{Position.Top}}px; background:{{Color}}; width:{{Size.Width}}px; height:{{Size.Height}}px" class="sticker">
+        <div class="customize" style="visibility:hidden;background:#f8f7b6; padding:5px;">
+            <div theme="yellow" class="color colorCurrent colorYellow"></div>
+            <div theme="blue" class="color colorBlue"></div>
+            <div theme="green" class="color colorGreen"></div>
+            <div theme="pink" class="color colorPink"></div>
+            <div style="clear:both"></div>
+            <div style="" class="remove">✗</div>
+        </div>
+        <div class="editContainer">
+            <div class="comment">{{ Comment }}</div>
+            <div style="display:none;" class="editSticker">
+                <textarea class="comment-box"></textarea>
+                <div style="text-align:right">
+                  <span class="ok"> ✔</span>
+                   <span class="cancel">✘</span>
+                </div>
+            <div>
+        </div>
+    </div>
+</script>
+
+<div id="stickersContainer">
+    <div class="navbar navbar-fixed-top">
+        <div class="main-menu">
+            <div id="logo">
+               Just Sticker</div>
+
+               <span id="countSticker"></span>
+
+            <a href="#" id="addSticker" style="position: absolute; top: 2px; right: 120px;" class="btn btn-success">
+                <i class="icon-file icon-white"></i></a><a href="#" id="removeAllStickers" style="position: absolute;
+                    top: 2px; right: 10px; font-family: Helvetica Neue,Helvetica,Arial,sans-serif"
+                    class="btn btn-danger"><i class="icon-trash icon-white"></i>Remove All</a>
+        </div>
+    </div>
+    <div id="howToUse">
+        <strong>How to use:</strong><br />
+        - Double click anywhere to create a new sticker<br />
+        - Double click on sticker to edit it<br />
+        - Press Enter to 'Save' or Escape to 'Cancel' editing
+    </div>
+    <div id="about">
+    Created by Artem Shkolovyi<br />
+    <a href="">{Download source code}</a>
+    </div>
+</div>

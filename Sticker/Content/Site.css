@@ -1,0 +1,219 @@
+body
+{
+margin:0; padding:0;
+ 
+}
+
+#logo
+{
+color: #999;
+font-weight: bold;
+text-shadow: 0 1px 0 rgba(255, 255, 255, 0.1), 0 0 30px #FFFFFF;
+font-size:1.8em;
+padding:9px;
+}
+
+.sticker
+{
+background:#fdfcbc;
+border:#ccc;
+box-shadow:0 2px 4px #ccc;
+font-family: Consolas;
+font-style:italic;
+font-size:1.2em;
+width:150px;
+height:100px;
+z-index:10;
+}
+ 
+ .sticker-move
+{
+    box-shadow:2px 6px 7px #999;
+}
+ 
+.comment-box, .comment-box:focus
+{
+font-family: Consolas;
+font-style:italic;
+font-size:1.0em;
+background:#fdfcbc;
+border-width:0;
+width:100%;
+height:80px;
+padding:0;
+margin:0 0 10px 0;
+resize:  none;
+outline: none;
+box-shadow:none;
+}
+ 
+.remove
+{
+position:absolute;
+top:3px;
+right:5px;
+cursor:pointer;
+font-size:0.9em;
+}
+     
+.remove:hover
+{
+cursor:pointer;
+}  
+.comment
+{
+height: 95px;
+overflow: auto;
+overflow-x:hidden;
+overflow-y:auto;
+}
+
+.editContainer
+{
+padding:1px 10px 10px 10px;
+}
+
+.colorYellow,
+.colorBlue,
+.colorGreen,
+.colorPink
+{
+width: 13px;
+height:13px;
+float:left;
+margin-right:10px;
+cursor:pointer;
+}
+
+.colorCurrent
+{
+width: 11px !important;
+height:11px !important;
+border: 1px solid #ccc;
+}
+
+.colorYellow
+{
+background:#fcfaab;
+}
+
+.colorBlue
+{
+background:#d8f2fa; 
+}
+    
+.colorGreen
+{
+background:#d0fecb; 
+}
+    
+.colorPink
+{
+background:#f5d2f5; 
+}
+
+/*Themes*/
+.yellow-theme .customize
+{
+background:#f8f7b6;   
+}
+
+.yellow-theme .sticker, .yellow-theme .comment-box
+{
+background:#fdfcbc;   
+}
+
+.pink-theme .customize
+{
+background:#f1c3f1 !important;   
+}
+
+.pink-theme .sticker, .pink-theme .comment-box
+{
+background:#f5d2f5 !important;    
+}
+
+.blue-theme .customize
+{
+background:#c9ecf8 !important;   
+}
+
+.blue-theme .sticker, .blue-theme .comment-box
+{
+background:#d8f2fa !important;    
+}
+
+.green-theme .customize
+{
+background:#c5f7c1 !important;   
+}
+
+.green-theme .sticker, .green-theme .comment-box
+{
+background:#d0fecb !important;    
+}
+
+
+
+.ok, .cancel
+{
+cursor:pointer;
+font-weight:bold;
+}
+    
+.ok
+{
+margin-right:10px;
+}
+        
+#stickersContainer
+{
+background:url('../tile.gif');
+position:relative;
+}
+
+#howToUse
+{
+position: absolute;
+top: 140px; 
+left: 100px; 
+line-height: 2.0em;
+font-family: MV Boli;
+font-style: italic; 
+color: #999; 
+font-size: 1.8em;
+}
+
+.main-menu
+{
+background-color: #F4F4F4;
+background-image: -moz-linear-gradient(#FAFAFA, #EEEEEE);
+background-image: -webkit-linear-gradient(#FAFAFA, #EEEEEE);
+background-image: linear-gradient(#FAFAFA, #EEEEEE);
+border-bottom: 1px solid #CCCCCC;
+height: 40px;
+position: relative;
+font-family:MV Boli;
+}
+
+#about
+{
+font-family:MV Boli;
+position:absolute;
+bottom:20px;
+right:20px;
+color:#ccc;
+}
+    
+#countSticker
+{   
+background: none repeat scroll 0 0 #CCCCCC;
+border-radius: 2em 2em 2em 2em;
+color: #FFFFFF;
+font-family: Arial;
+font-style: normal;
+padding: 1px 6px;
+position: absolute;
+right: 180px;
+top: 10px;
+}
